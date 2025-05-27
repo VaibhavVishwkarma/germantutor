@@ -18,10 +18,10 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <h2 className="font-poppins text-3xl lg:text-4xl font-bold mb-6">
-              हमसे जुड़ें
+              Contact Us
             </h2>
             <p className="text-blue-100 text-lg mb-8">
-              कोई सवाल या मदद चाहिए? हम यहाँ हैं आपकी सहायता के लिए
+              Have any questions or need help? We're here to assist you
             </p>
             
             <div className="space-y-6">
@@ -30,7 +30,7 @@ export default function ContactSection() {
                   <Phone className="text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold">फोन करें</div>
+                  <div className="font-semibold">Call Us</div>
                   <div className="text-blue-100">+91 98765 43210</div>
                 </div>
               </div>
@@ -40,7 +40,7 @@ export default function ContactSection() {
                   <Mail className="text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold">ईमेल करें</div>
+                  <div className="font-semibold">Email Us</div>
                   <div className="text-blue-100">support@germantutor.in</div>
                 </div>
               </div>
@@ -57,10 +57,10 @@ export default function ContactSection() {
             </div>
             
             <div className="mt-8">
-              <h3 className="font-semibold text-xl mb-4">सपोर्ट टाइमिंग</h3>
+              <h3 className="font-semibold text-xl mb-4">Support Timing</h3>
               <div className="text-blue-100">
-                सोमवार से शनिवार: सुबह 9 बजे से रात 8 बजे तक<br />
-                रविवार: सुबह 10 बजे से शाम 6 बजे तक
+                Monday to Saturday: 9 AM to 8 PM<br />
+                Sunday: 10 AM to 6 PM
               </div>
             </div>
           </div>

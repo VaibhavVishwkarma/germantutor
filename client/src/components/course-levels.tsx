@@ -77,14 +77,14 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
                   
                   <div className="text-center mb-4">
                     <span className="text-2xl font-bold text-brand-orange">{level.price}</span>
-                    <div className="text-sm text-gray-600">पूरा कोर्स</div>
+                    <div className="text-sm text-gray-600">Complete Course</div>
                   </div>
                   
                   <Button 
                     onClick={() => onLevelSelect(`${level.id} Level`, level.price)}
                     className="w-full bg-brand-orange text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
                   >
-                    {level.id} चुनें
+                    Choose {level.id}
                   </Button>
                 </div>
               </CardContent>
@@ -102,8 +102,8 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
                 <div className="w-16 h-16 bg-gradient-to-br from-brand-orange to-german-red rounded-full flex items-center justify-center mx-auto mb-4">
                   <Crown className="text-white text-xl" />
                 </div>
-                <h3 className="font-poppins font-bold text-xl text-gray-900 mb-2">संपूर्ण पैकेज</h3>
-                <p className="text-gray-600 text-sm mb-4">A1 से B1 तक - पूरा कोर्स एक साथ, ज्यादा बचत के साथ</p>
+                <h3 className="font-poppins font-bold text-xl text-gray-900 mb-2">Complete Package</h3>
+                <p className="text-gray-600 text-sm mb-4">A1 to B1 - Full course together with maximum savings</p>
                 
                 <div className="space-y-2 text-sm text-gray-700 mb-6">
                   <div className="flex items-center">
@@ -112,7 +112,7 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
                   </div>
                   <div className="flex items-center">
                     <Check className="text-brand-orange mr-2 h-4 w-4" />
-                    <span>Certificate</span>
+                    <span>Expert Tutoring</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="text-brand-orange mr-2 h-4 w-4" />
@@ -123,7 +123,7 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
                 <div className="text-center mb-4">
                   <div className="line-through text-gray-500">₹5,997</div>
                   <span className="text-2xl font-bold text-brand-orange">₹4,999</span>
-                  <div className="text-sm text-green-600 font-medium">₹998 की बचत!</div>
+                  <div className="text-sm text-green-600 font-medium">Save ₹998!</div>
                 </div>
                 
                 <Button 

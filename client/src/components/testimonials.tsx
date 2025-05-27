@@ -5,23 +5,23 @@ export default function Testimonials() {
   const testimonials = [
     {
       rating: 5,
-      text: "मेरे बेटे ने सिर्फ 3 महीने में जर्मन सीख लिया। शिक्षक बहुत अच्छे हैं और बच्चों को समझाने का तरीका शानदार है।",
-      name: "प्रिया शर्मा",
-      role: "आर्यन की माँ (10 साल)",
+      text: "My son learned German in just 3 months. The teacher is excellent and has a wonderful way of explaining to children.",
+      name: "Priya Sharma",
+      role: "Aryan's Mother (10 years)",
       image: "https://images.unsplash.com/photo-1582233479366-6d38bc390a08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
     },
     {
       rating: 5,
-      text: "बहुत ही किफायती कीमत में बेहतरीन कोर्स। मेरी बेटी अब धाराप्रवाह जर्मन बोल सकती है। जर्मनी जाने का सपना पूरा होगा।",
-      name: "राजेश कुमार",
-      role: "अनीता के पापा (12 साल)",
+      text: "Excellent course at very affordable price. My daughter can now speak German fluently. Her dream of going to Germany will come true.",
+      name: "Rajesh Kumar",
+      role: "Anita's Father (12 years)",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
     },
     {
       rating: 5,
-      text: "German Tutor से बेहतर कोई नहीं। छोटे बच्चों के लिए बिल्कुल perfect है। ऐप भी बहुत easy है use करने में।",
-      name: "सुनीता देवी",
-      role: "करण की माँ (8 साल)",
+      text: "Nothing is better than German Tutor. Perfect for small children. The platform is also very easy to use.",
+      name: "Sunita Devi",
+      role: "Karan's Mother (8 years)",
       image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
     }
   ];
@@ -31,10 +31,10 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-poppins text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            छात्रों की समीक्षाएं
+            Student Reviews
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            हजारों खुश छात्रों और माता-पिता की राय
+            Thousands of happy students and parents feedback
           </p>
         </div>
         
@@ -69,8 +69,8 @@ export default function Testimonials() {
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-4 bg-green-50 px-6 py-3 rounded-xl">
             <Trophy className="text-green-600 text-xl" />
-            <span className="font-semibold text-gray-900">4.8/5 रेटिंग</span>
-            <span className="text-gray-600">500+ रिव्यूज के आधार पर</span>
+            <span className="font-semibold text-gray-900">4.8/5 Rating</span>
+            <span className="text-gray-600">Based on 500+ reviews</span>
           </div>
         </div>
       </div>
