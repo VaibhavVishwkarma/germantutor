@@ -71,18 +71,18 @@ export default function ContactSection() {
               <form onSubmit={handleQuickMessage} className="space-y-4">
                 <Input
                   type="text"
-                  placeholder="आपका नाम"
+                  placeholder="Your Name"
                   className="bg-white bg-opacity-20 border-white border-opacity-30 text-white placeholder-blue-100 focus:ring-white focus:ring-opacity-50"
                   required
                 />
                 <Input
                   type="email"
-                  placeholder="ईमेल"
+                  placeholder="Email"
                   className="bg-white bg-opacity-20 border-white border-opacity-30 text-white placeholder-blue-100 focus:ring-white focus:ring-opacity-50"
                   required
                 />
                 <Textarea
-                  placeholder="आपका संदेश"
+                  placeholder="Your Message"
                   rows={4}
                   className="bg-white bg-opacity-20 border-white border-opacity-30 text-white placeholder-blue-100 focus:ring-white focus:ring-opacity-50"
                   required
@@ -91,7 +91,7 @@ export default function ContactSection() {
                   type="submit"
                   className="w-full bg-brand-orange text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
                 >
-                  संदेश भेजें
+                  Send Message
                 </Button>
               </form>
             </CardContent>

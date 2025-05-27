@@ -42,7 +42,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
     try {
       // Web3Forms API integration
       const formDataToSend = new FormData();
-      formDataToSend.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "");
+      formDataToSend.append("access_key", "2b8984e0-8732-474a-b4e7-489535f685f9");
       formDataToSend.append("subject", `German Tutor Enrollment - ${selectedLevel}`);
       formDataToSend.append("from_name", formData.parentName);
       formDataToSend.append("selected_level", selectedLevel);
@@ -60,7 +60,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
       if (response.ok) {
         toast({
           title: "Enrollment Successful!",
-          description: "आपका फॉर्म सफलतापूर्वक सबमिट हो गया। हम जल्दी ही आपसे संपर्क करेंगे।",
+          description: "Your form has been submitted successfully. We will contact you soon.",
         });
         onClose();
         setShowEnrollmentForm(false);
@@ -80,7 +80,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
     } catch (error) {
       toast({
         title: "Error",
-        description: "फॉर्म सबमिट करने में समस्या हुई। कृपया फिर से कोशिश करें।",
+        description: "There was a problem submitting the form. Please try again.",
         variant: "destructive",
       });
     } finally {
@@ -111,7 +111,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
             </div>
             
             <div className="text-2xl font-bold text-brand-orange mb-2">{selectedPrice}</div>
-            <p className="text-gray-600 mb-6">QR Code scan करके payment करें</p>
+            <p className="text-gray-600 mb-6">Scan QR Code to make payment</p>
             
             <div className="bg-gray-100 w-48 h-48 mx-auto rounded-xl flex items-center justify-center mb-4">
               <div className="text-center">
@@ -122,7 +122,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
             
             <div className="text-sm text-gray-600 mb-4">
               UPI ID: germantutorpayments@paytm<br />
-              या किसी भी UPI app से scan करें
+              Or scan with any UPI app
             </div>
             
             <Button 
@@ -130,57 +130,57 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
               className="w-full bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700"
             >
               <Check className="mr-2 h-4 w-4" />
-              Payment Complete! अब Details भरें
+              Payment Complete! Fill Details Now
             </Button>
           </div>
         ) : (
           <div>
-            <h4 className="font-semibold text-lg mb-4">छात्र की जानकारी भरें</h4>
+            <h4 className="font-semibold text-lg mb-4">Fill Student Information</h4>
             
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <Label htmlFor="studentName" className="text-sm font-medium text-gray-700">छात्र का नाम *</Label>
+                <Label htmlFor="studentName" className="text-sm font-medium text-gray-700">Student Name *</Label>
                 <Input
                   id="studentName"
                   type="text"
                   required
                   value={formData.studentName}
                   onChange={(e) => handleInputChange("studentName", e.target.value)}
-                  placeholder="छात्र का पूरा नाम"
+                  placeholder="Student's full name"
                   className="mt-1"
                 />
               </div>
               
               <div>
-                <Label htmlFor="age" className="text-sm font-medium text-gray-700">उम्र *</Label>
+                <Label htmlFor="age" className="text-sm font-medium text-gray-700">Age *</Label>
                 <Select value={formData.age} onValueChange={(value) => handleInputChange("age", value)}>
                   <SelectTrigger className="mt-1">
-                    <SelectValue placeholder="उम्र चुनें" />
+                    <SelectValue placeholder="Select age" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="5-7">5-7 साल</SelectItem>
-                    <SelectItem value="8-10">8-10 साल</SelectItem>
-                    <SelectItem value="11-13">11-13 साल</SelectItem>
-                    <SelectItem value="14-16">14-16 साल</SelectItem>
+                    <SelectItem value="5-7">5-7 years</SelectItem>
+                    <SelectItem value="8-10">8-10 years</SelectItem>
+                    <SelectItem value="11-13">11-13 years</SelectItem>
+                    <SelectItem value="14-16">14-16 years</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
               
               <div>
-                <Label htmlFor="parentName" className="text-sm font-medium text-gray-700">माता-पिता का नाम *</Label>
+                <Label htmlFor="parentName" className="text-sm font-medium text-gray-700">Parent Name *</Label>
                 <Input
                   id="parentName"
                   type="text"
                   required
                   value={formData.parentName}
                   onChange={(e) => handleInputChange("parentName", e.target.value)}
-                  placeholder="माता या पिता का नाम"
+                  placeholder="Parent or guardian name"
                   className="mt-1"
                 />
               </div>
               
               <div>
-                <Label htmlFor="email" className="text-sm font-medium text-gray-700">ईमेल आईडी *</Label>
+                <Label htmlFor="email" className="text-sm font-medium text-gray-700">Email ID *</Label>
                 <Input
                   id="email"
                   type="email"
@@ -193,7 +193,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
               </div>
               
               <div>
-                <Label htmlFor="phone" className="text-sm font-medium text-gray-700">फोन नंबर *</Label>
+                <Label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number *</Label>
                 <Input
                   id="phone"
                   type="tel"
@@ -219,24 +219,24 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
               </div>
               
               <div>
-                <Label htmlFor="city" className="text-sm font-medium text-gray-700">शहर</Label>
+                <Label htmlFor="city" className="text-sm font-medium text-gray-700">City</Label>
                 <Input
                   id="city"
                   type="text"
                   value={formData.city}
                   onChange={(e) => handleInputChange("city", e.target.value)}
-                  placeholder="आपका शहर"
+                  placeholder="Your city"
                   className="mt-1"
                 />
               </div>
               
               <div>
-                <Label htmlFor="notes" className="text-sm font-medium text-gray-700">कोई खास बात (Optional)</Label>
+                <Label htmlFor="notes" className="text-sm font-medium text-gray-700">Special Requirements (Optional)</Label>
                 <Textarea
                   id="notes"
                   value={formData.notes}
                   onChange={(e) => handleInputChange("notes", e.target.value)}
-                  placeholder="कोई विशेष आवश्यकता या सवाल?"
+                  placeholder="Any special requirements or questions?"
                   rows={3}
                   className="mt-1"
                 />
@@ -248,7 +248,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
                 className="w-full bg-brand-orange text-white py-4 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
               >
                 <Layers className="mr-2 h-4 w-4" />
-                {isSubmitting ? "सबमिट हो रहा है..." : "Enrollment Complete करें"}
+                {isSubmitting ? "Submitting..." : "Complete Enrollment"}
               </Button>
             </form>
           </div>
