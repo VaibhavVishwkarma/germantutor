@@ -33,7 +33,7 @@ export default function Header() {
             </div>
             <div>
               <h1 className="font-poppins font-bold text-xl text-brand-blue">German Tutor</h1>
-              <p className="text-xs text-gray-600">जर्मन भाषा सीखें</p>
+              <p className="text-xs text-gray-600">Learn German Language</p>
             </div>
           </div>
           
@@ -42,25 +42,25 @@ export default function Header() {
               onClick={() => scrollToSection("courses")}
               className="text-gray-700 hover:text-brand-orange transition-colors"
             >
-              कोर्सेज
+              Courses
             </button>
             <button 
               onClick={() => scrollToSection("features")}
               className="text-gray-700 hover:text-brand-orange transition-colors"
             >
-              विशेषताएं
+              Features
             </button>
             <button 
               onClick={() => scrollToSection("testimonials")}
               className="text-gray-700 hover:text-brand-orange transition-colors"
             >
-              समीक्षाएं
+              Reviews
             </button>
             <button 
               onClick={() => scrollToSection("contact")}
               className="text-gray-700 hover:text-brand-orange transition-colors"
             >
-              संपर्क
+              Contact
             </button>
           </nav>
           
@@ -86,25 +86,25 @@ export default function Header() {
                 onClick={() => scrollToSection("courses")}
                 className="text-gray-700 hover:text-brand-orange transition-colors text-left"
               >
-                कोर्सेज
+                Courses
               </button>
               <button 
                 onClick={() => scrollToSection("features")}
                 className="text-gray-700 hover:text-brand-orange transition-colors text-left"
               >
-                विशेषताएं
+                Features
               </button>
               <button 
                 onClick={() => scrollToSection("testimonials")}
                 className="text-gray-700 hover:text-brand-orange transition-colors text-left"
               >
-                समीक्षाएं
+                Reviews
               </button>
               <button 
                 onClick={() => scrollToSection("contact")}
                 className="text-gray-700 hover:text-brand-orange transition-colors text-left"
               >
-                संपर्क
+                Contact
               </button>
             </nav>
           </div>

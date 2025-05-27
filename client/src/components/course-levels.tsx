@@ -10,8 +10,8 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
   const levels = [
     {
       id: "A1",
-      title: "शुरुआती स्तर",
-      description: "बुनियादी जर्मन सीखें - अभिवादन, परिचय, दैनिक वार्तालाप",
+      title: "Beginner Level",
+      description: "Learn basic German - greetings, introductions, daily conversations",
       features: ["Basic Grammar", "Common Phrases", "Pronunciation"],
       price: "₹1,999",
       bgColor: "from-green-50 to-green-100",
@@ -21,8 +21,8 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
     },
     {
       id: "A2",
-      title: "प्राथमिक स्तर",
-      description: "व्यावहारिक जर्मन - खरीदारी, यात्रा, पारिवारिक चर्चा",
+      title: "Elementary Level",
+      description: "Practical German - shopping, travel, family discussions",
       features: ["Past & Future Tenses", "Daily Conversations", "Cultural Context"],
       price: "₹1,999",
       bgColor: "from-blue-50 to-blue-100",
@@ -32,8 +32,8 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
     },
     {
       id: "B1",
-      title: "मध्यम स्तर",
-      description: "उन्नत जर्मन - व्यावसायिक संवाद, लेखन कौशल",
+      title: "Intermediate Level",
+      description: "Advanced German - professional communication, writing skills",
       features: ["Complex Grammar", "Professional German", "Writing Skills"],
       price: "₹1,999",
       bgColor: "from-purple-50 to-purple-100",
@@ -48,10 +48,10 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-poppins text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            जर्मन भाषा के स्तर
+            German Language Levels
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A1 से B1 तक का संपूर्ण कोर्स। हर स्तर में व्यापक सिलेबस और व्यावहारिक अभ्यास
+            Complete course from A1 to B1. Each level includes comprehensive syllabus and practical exercises
           </p>
         </div>
         
