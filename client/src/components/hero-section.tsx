@@ -45,7 +45,7 @@ export default function HeroSection() {
                 className="border-2 border-brand-blue text-brand-blue px-8 py-4 rounded-xl font-semibold hover:bg-brand-blue hover:text-white transition-colors"
               >
                 <Phone className="mr-2 h-4 w-4" />
-                Book Free Demo
+                Get Started Today
               </Button>
             </div>
             

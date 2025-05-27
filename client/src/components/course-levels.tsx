@@ -55,7 +55,7 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {levels.map((level) => (
             <Card key={level.id} className={`bg-gradient-to-br ${level.bgColor} ${level.borderColor} hover:shadow-lg transition-shadow`}>
               <CardContent className="p-6">
@@ -91,50 +91,7 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
             </Card>
           ))}
           
-          {/* Complete Package */}
-          <Card className="bg-gradient-to-br from-yellow-50 to-orange-100 border-2 border-brand-orange hover:shadow-lg transition-shadow relative">
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <span className="bg-brand-orange text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
-            </div>
-            
-            <CardContent className="p-6 mt-2">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-brand-orange to-german-red rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Crown className="text-white text-xl" />
-                </div>
-                <h3 className="font-poppins font-bold text-xl text-gray-900 mb-2">Complete Package</h3>
-                <p className="text-gray-600 text-sm mb-4">A1 to B1 - Full course together with maximum savings</p>
-                
-                <div className="space-y-2 text-sm text-gray-700 mb-6">
-                  <div className="flex items-center">
-                    <Check className="text-brand-orange mr-2 h-4 w-4" />
-                    <span>All 3 Levels</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Check className="text-brand-orange mr-2 h-4 w-4" />
-                    <span>Personal Tutoring</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Check className="text-brand-orange mr-2 h-4 w-4" />
-                    <span>Flexible Schedule</span>
-                  </div>
-                </div>
-                
-                <div className="text-center mb-4">
-                  <div className="line-through text-gray-500">₹5,997</div>
-                  <span className="text-2xl font-bold text-brand-orange">₹4,999</span>
-                  <div className="text-sm text-green-600 font-medium">Save ₹998!</div>
-                </div>
-                
-                <Button 
-                  onClick={() => onLevelSelect("Complete Package", "₹4,999")}
-                  className="w-full bg-gradient-to-r from-brand-orange to-german-red text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-shadow"
-                >
-                  Complete Package
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+
         </div>
       </div>
     </section>

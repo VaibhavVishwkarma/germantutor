@@ -5,23 +5,23 @@ export default function Testimonials() {
   const testimonials = [
     {
       rating: 5,
-      text: "My son learned German in just 3 months. The teacher is excellent and has a wonderful way of explaining to children.",
-      name: "Priya Sharma",
-      role: "Aryan's Mother (10 years)",
+      text: "I learned German in just 3 months. The teacher is excellent and has a wonderful way of explaining.",
+      name: "Aryan",
+      role: "Age 10",
       image: "https://images.unsplash.com/photo-1582233479366-6d38bc390a08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
     },
     {
       rating: 5,
-      text: "Excellent course at very affordable price. My daughter can now speak German fluently. Her dream of going to Germany will come true.",
-      name: "Rajesh Kumar",
-      role: "Anita's Father (12 years)",
+      text: "Excellent course at very affordable price. I can now speak German fluently. My dream of going to Germany will come true.",
+      name: "Anita",
+      role: "Age 12",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
     },
     {
       rating: 5,
-      text: "Nothing is better than German Tutor. Perfect for small children. The platform is also very easy to use.",
-      name: "Sunita Devi",
-      role: "Karan's Mother (8 years)",
+      text: "Nothing is better than German Tutor. Perfect for children. The lessons are also very easy to follow.",
+      name: "Karan",
+      role: "Age 8",
       image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
     }
   ];

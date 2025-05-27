@@ -8,8 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function ContactSection() {
   const handleQuickMessage = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle quick message form submission
-    alert("संदेश भेजा गया!");
+    // Form will be handled by Web3Forms
   };
 
   return (
@@ -25,74 +24,47 @@ export default function ContactSection() {
             </p>
             
             <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
-                  <Phone className="text-white" />
-                </div>
-                <div>
-                  <div className="font-semibold">Call Us</div>
-                  <div className="text-blue-100">+91 98765 43210</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
-                  <Mail className="text-white" />
-                </div>
-                <div>
-                  <div className="font-semibold">Email Us</div>
-                  <div className="text-blue-100">support@germantutor.in</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
-                  <FaWhatsapp className="text-white text-xl" />
-                </div>
-                <div>
-                  <div className="font-semibold">WhatsApp</div>
-                  <div className="text-blue-100">+91 98765 43210</div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mt-8">
-              <h3 className="font-semibold text-xl mb-4">Support Timing</h3>
-              <div className="text-blue-100">
-                Monday to Saturday: 9 AM to 8 PM<br />
-                Sunday: 10 AM to 6 PM
-              </div>
+              <p className="text-blue-100">
+                Ready to start your German learning journey? Fill out the form and we'll get back to you soon!
+              </p>
             </div>
           </div>
           
           <Card className="bg-white bg-opacity-10 border-white border-opacity-30">
             <CardContent className="p-8">
               <h3 className="font-poppins font-bold text-xl mb-6 text-white">Quick Message</h3>
-              <form onSubmit={handleQuickMessage} className="space-y-4">
-                <Input
+              <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
+                <input type="hidden" name="access_key" value="2b8984e0-8732-474a-b4e7-489535f685f9" />
+                <input type="hidden" name="subject" value="German Tutor Contact Form" />
+                <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                
+                <input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
-                  className="bg-white bg-opacity-20 border-white border-opacity-30 text-white placeholder-blue-100 focus:ring-white focus:ring-opacity-50"
+                  className="w-full p-3 bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-blue-100 rounded-lg focus:ring-2 focus:ring-white focus:ring-opacity-50 focus:outline-none"
                   required
                 />
-                <Input
+                <input
                   type="email"
+                  name="email"
                   placeholder="Email"
-                  className="bg-white bg-opacity-20 border-white border-opacity-30 text-white placeholder-blue-100 focus:ring-white focus:ring-opacity-50"
+                  className="w-full p-3 bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-blue-100 rounded-lg focus:ring-2 focus:ring-white focus:ring-opacity-50 focus:outline-none"
                   required
                 />
-                <Textarea
+                <textarea
+                  name="message"
                   placeholder="Your Message"
                   rows={4}
-                  className="bg-white bg-opacity-20 border-white border-opacity-30 text-white placeholder-blue-100 focus:ring-white focus:ring-opacity-50"
+                  className="w-full p-3 bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-blue-100 rounded-lg focus:ring-2 focus:ring-white focus:ring-opacity-50 focus:outline-none resize-none"
                   required
-                />
-                <Button
+                ></textarea>
+                <button
                   type="submit"
                   className="w-full bg-brand-orange text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
                 >
                   Send Message
-                </Button>
+                </button>
               </form>
             </CardContent>
           </Card>

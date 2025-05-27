@@ -113,16 +113,16 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
             <div className="text-2xl font-bold text-brand-orange mb-2">{selectedPrice}</div>
             <p className="text-gray-600 mb-6">Scan QR Code to make payment</p>
             
-            <div className="bg-gray-100 w-48 h-48 mx-auto rounded-xl flex items-center justify-center mb-4">
-              <div className="text-center">
-                <QrCode className="text-4xl text-gray-400 mb-2 mx-auto" size={48} />
-                <div className="text-sm text-gray-500">Payment QR Code</div>
-              </div>
+            <div className="w-48 h-48 mx-auto rounded-xl mb-4">
+              <img 
+                src="/src/assets/WhatsApp Image 2025-05-27 at 18.02.34_29c2be4e.jpg"
+                alt="Payment QR Code"
+                className="w-full h-full object-contain rounded-xl"
+              />
             </div>
             
             <div className="text-sm text-gray-600 mb-4">
-              UPI ID: germantutorpayments@paytm<br />
-              Or scan with any UPI app
+              Scan with any UPI app to make payment
             </div>
             
             <Button 
