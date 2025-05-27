@@ -112,11 +112,11 @@ export default function CourseLevels({ onLevelSelect }: CourseLevelsProps) {
                   </div>
                   <div className="flex items-center">
                     <Check className="text-brand-orange mr-2 h-4 w-4" />
-                    <span>Expert Tutoring</span>
+                    <span>Personal Tutoring</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="text-brand-orange mr-2 h-4 w-4" />
-                    <span>Lifetime Access</span>
+                    <span>Flexible Schedule</span>
                   </div>
                 </div>
                 

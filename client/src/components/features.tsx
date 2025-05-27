@@ -15,39 +15,21 @@ export default function Features() {
   const features = [
     {
       icon: <FaChalkboardTeacher className="text-blue-600 text-xl" />,
-      title: "Expert Teacher",
-      description: "Experienced tutor with special expertise in teaching German to Indian students.",
+      title: "Personal Tutor",
+      description: "One-on-one teaching with personalized attention for each student.",
       bgColor: "bg-blue-100"
     },
     {
       icon: <FaMobileAlt className="text-green-600 text-xl" />,
-      title: "Mobile Friendly",
-      description: "Learn anywhere, anytime. Great experience on both Android and iOS.",
+      title: "Flexible Learning",
+      description: "Learn at your own pace with flexible timing and schedule.",
       bgColor: "bg-green-100"
     },
     {
-      icon: <FaCertificate className="text-yellow-600 text-xl" />,
-      title: "Course Completion",
-      description: "Get course completion certificate after successfully finishing each level.",
-      bgColor: "bg-yellow-100"
-    },
-    {
       icon: <FaHeadphones className="text-purple-600 text-xl" />,
-      title: "Interactive Learning",
-      description: "Voice recognition, pronunciation correction, and real-time feedback.",
+      title: "Interactive Sessions",
+      description: "Engaging lessons with pronunciation practice and real conversations.",
       bgColor: "bg-purple-100"
-    },
-    {
-      icon: <FaUsers className="text-red-600 text-xl" />,
-      title: "Community Support",
-      description: "Connect with other students. Clear doubts and practice together.",
-      bgColor: "bg-red-100"
-    },
-    {
-      icon: <FaClock className="text-indigo-600 text-xl" />,
-      title: "Lifetime Access",
-      description: "Buy once, access forever. Free updates included.",
-      bgColor: "bg-indigo-100"
     }
   ];
 

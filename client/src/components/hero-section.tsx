@@ -24,7 +24,7 @@ export default function HeroSection() {
             </div>
             
             <h1 className="font-poppins text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Teach Your Children <span className="text-brand-orange">German Language</span>
+              Want to Learn <span className="text-brand-orange">German Language</span>?
             </h1>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
