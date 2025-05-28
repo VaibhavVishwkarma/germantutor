@@ -27,7 +27,6 @@ export default function Footer() {
               <li><a href="#courses" className="hover:text-white transition-colors">A1 Level</a></li>
               <li><a href="#courses" className="hover:text-white transition-colors">A2 Level</a></li>
               <li><a href="#courses" className="hover:text-white transition-colors">B1 Level</a></li>
-              <li><a href="#courses" className="hover:text-white transition-colors">Complete Package</a></li>
             </ul>
           </div>
           

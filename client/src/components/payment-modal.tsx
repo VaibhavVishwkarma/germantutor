@@ -1,4 +1,5 @@
 import { useState } from "react";
+import qrCodeImg from "../assets/qr-code.jpg";
 import { X, Check, Layers, QrCode } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -115,7 +116,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
             
             <div className="w-48 h-48 mx-auto rounded-xl mb-4">
               <img 
-                src="/qr-code.jpg"
+                src= {qrCodeImg}
                 alt="Payment QR Code"
                 className="w-full h-full object-contain rounded-xl"
               />
