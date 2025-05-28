@@ -115,7 +115,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
             
             <div className="w-48 h-48 mx-auto rounded-xl mb-4">
               <img 
-                src="/src/assets/WhatsApp Image 2025-05-27 at 18.02.34_29c2be4e.jpg"
+                src="/src/assets/qr-code.jpg"
                 alt="Payment QR Code"
                 className="w-full h-full object-contain rounded-xl"
               />
