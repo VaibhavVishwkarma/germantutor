@@ -60,7 +60,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
       if (response.ok) {
         toast({
           title: "Payment Verification in Progress!",
-          description: "Your form has been submitted successfully. We will contact you soon.",
+          description: "We have received your details. Our team will reach out to you shortly.",
         });
         onClose();
         setShowEnrollmentForm(false);
@@ -115,7 +115,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
             
             <div className="w-48 h-48 mx-auto rounded-xl mb-4">
               <img 
-                src="/src/assets/qr-code.jpg"
+                src="/qr-code.jpg"
                 alt="Payment QR Code"
                 className="w-full h-full object-contain rounded-xl"
               />
