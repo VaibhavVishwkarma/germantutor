@@ -59,7 +59,7 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
 
       if (response.ok) {
         toast({
-          title: "Enrollment Successful!",
+          title: "Payment Verification in Progress!",
           description: "Your form has been submitted successfully. We will contact you soon.",
         });
         onClose();
@@ -166,18 +166,6 @@ export default function PaymentModal({ isOpen, onClose, selectedLevel, selectedP
                 </Select>
               </div>
               
-              <div>
-                <Label htmlFor="parentName" className="text-sm font-medium text-gray-700">Parent Name *</Label>
-                <Input
-                  id="parentName"
-                  type="text"
-                  required
-                  value={formData.parentName}
-                  onChange={(e) => handleInputChange("parentName", e.target.value)}
-                  placeholder="Parent or guardian name"
-                  className="mt-1"
-                />
-              </div>
               
               <div>
                 <Label htmlFor="email" className="text-sm font-medium text-gray-700">Email ID *</Label>
