@@ -28,8 +28,8 @@ export default function HeroSection() {
             </h1>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Complete course from A1 to B1 levels. Expert tutoring. Only ₹1,999 per level. 
-              Your child's future in Germany starts here!
+              Complete course from A1 to B1 levels. Expert tutoring. Start from ₹1,999. 
+              Your future in Germany starts here!
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
